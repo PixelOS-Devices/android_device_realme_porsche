@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_porsche.mk
+    $(LOCAL_DIR)/custom_porsche.mk
