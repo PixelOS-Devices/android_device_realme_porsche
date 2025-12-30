@@ -12,6 +12,7 @@ from extract_utils.fixups_blob import (
 )
 from extract_utils.fixups_lib import (
     lib_fixups,
+    lib_fixups_user_type,
 )
 from extract_utils.main import (
     ExtractUtils,
@@ -67,6 +68,15 @@ def blob_fixup_nop_call(
 
         break
 
+
+def lib_fixup_odm_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'odm' else None
+
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    ('libextendfile.so'): lib_fixup_odm_suffix,
+}
 
 blob_fixups: blob_fixups_user_type = {
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
