@@ -23,8 +23,8 @@ PRODUCT_MODEL := RMX3312
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="RMX3312-user 15 AP3A.240617.008 S.1ec3644-22290-c7fd release-keys" \
-    BuildFingerprint=realme/RMX3312/RE58B2L1:15/AP3A.240617.008/S.1ec3644-22290-c7fd:user/release-keys \
+    BuildDesc="RMX3312-user 15 AP3A.240617.008 S.242fe81-7fc3-7fc2 release-keys" \
+    BuildFingerprint=realme/RMX3312/RE58B2L1:15/AP3A.240617.008/S.242fe81-7fc3-7fc2:user/release-keys \
     DeviceName=RE58B2L1 \
     DeviceProduct=RMX3312 \
     SystemDevice=RE58B2L1 \
